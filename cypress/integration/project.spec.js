@@ -263,7 +263,7 @@ describe('Trybewarts', () => {
     });
   });
 
-  describe.only('14 - Crie campo de entrada para avaliar de 1 a 10 o nível de satisfação com a Trybewarts', () => {
+  describe('14 - Crie campo de entrada para avaliar de 1 a 10 o nível de satisfação com a Trybewarts', () => {
     it('Um elemento com o id label-rate e o texto "Como você avalia a Trybewarts?" deverá ser criado', () => {
       cy.get('#label-rate').contains(LABEL_RATE_TEXT);
     });
@@ -275,7 +275,7 @@ describe('Trybewarts', () => {
     });
   });
 
-  describe('15 - Crie uma textarea com o id `textarea` e uma label com a classe `textarea` contendo o número máximo de caracteres igual à 500', () => {
+  describe.only('15 - Crie uma textarea com o id `textarea` e uma label com a classe `textarea` contendo o número máximo de caracteres igual à 500', () => {
     it('Uma label com a classe textarea e o texto "Deixe seu comentário:" deverá ser criado" ', () => {
       cy.get('.textarea').contains(LABEL_TEXTAREA);
     });
