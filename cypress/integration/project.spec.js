@@ -200,13 +200,13 @@ describe('Trybewarts', () => {
     });
   });
 
-  describe.only('10 - Posicione os campos de `Nome` e `Sobrenome` para que fiquem em linha', () => {
+  describe('10 - Posicione os campos de `Nome` e `Sobrenome` para que fiquem em linha', () => {
     it('O campo de "Sobrenome" está a direita do campo de "Nome"', () => {
       cy.get(USER_LASTNAME_INPUT_SELECTOR).should('be.rightOf', USER_NAME_INPUT_SELECTOR);
     });
   });
 
-  describe('11 - Posicione os campos de `Email` e `Casa` para que fiquem em linha', () => {
+  describe.only('11 - Posicione os campos de `Email` e `Casa` para que fiquem em linha', () => {
     it('O select das casas está a direita do campo de "Email"', () => {
       cy.get(HOUSES_SELECTOR).should('be.rightOf', USER_EMAIL_INPUT_SELECTOR);
     });
