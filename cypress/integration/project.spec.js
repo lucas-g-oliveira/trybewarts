@@ -206,13 +206,13 @@ describe('Trybewarts', () => {
     });
   });
 
-  describe.only('11 - Posicione os campos de `Email` e `Casa` para que fiquem em linha', () => {
+  describe('11 - Posicione os campos de `Email` e `Casa` para que fiquem em linha', () => {
     it('O select das casas está a direita do campo de "Email"', () => {
       cy.get(HOUSES_SELECTOR).should('be.rightOf', USER_EMAIL_INPUT_SELECTOR);
     });
   });
 
-  describe('12 - Acrescente ao formulário um campo de entrada para qual família a pessoa estudante se identifica', () => {
+  describe.only('12 - Acrescente ao formulário um campo de entrada para qual família a pessoa estudante se identifica', () => {
     it('Um elemento com o id "label-family" e o texto "Qual sua família?" deverá ser criado', () => {
       cy.get(`${EVALUATION_FORM} #label-family`)
         .should('have.text', LABEL_FAMILY_TEXT);
