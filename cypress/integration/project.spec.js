@@ -212,7 +212,7 @@ describe('Trybewarts', () => {
     });
   });
 
-  describe.only('12 - Acrescente ao formulário um campo de entrada para qual família a pessoa estudante se identifica', () => {
+  describe('12 - Acrescente ao formulário um campo de entrada para qual família a pessoa estudante se identifica', () => {
     it('Um elemento com o id "label-family" e o texto "Qual sua família?" deverá ser criado', () => {
       cy.get(`${EVALUATION_FORM} #label-family`)
         .should('have.text', LABEL_FAMILY_TEXT);
@@ -241,7 +241,7 @@ describe('Trybewarts', () => {
     });
   });
 
-  describe('13 - Crie campos de entrada do tipo `checkbox` contendo seis opções', () => {
+  describe.only('13 - Crie campos de entrada do tipo `checkbox` contendo seis opções', () => {
     it('Existe um elemento com o id "label-content" e o texto "Qual conteúdo você está com mais vontade de aprender?"', () => {
       cy.get('#label-content').contains(LABEL_CONTENT_TEXT);
     });
