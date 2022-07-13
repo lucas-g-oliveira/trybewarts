@@ -180,7 +180,7 @@ describe('Trybewarts', () => {
     });
   });
 
-  describe.only('9 - Acrescente ao formulário um select com o id `house` contendo as opções `Gitnória`, `Reactpuff`, `Corvinode` e `Pytherina`', () => {
+  describe('9 - Acrescente ao formulário um select com o id `house` contendo as opções `Gitnória`, `Reactpuff`, `Corvinode` e `Pytherina`', () => {
     beforeEach(() => cy.get(EVALUATION_FORM).as('houses'));
 
     const HOUSES = [
@@ -200,7 +200,7 @@ describe('Trybewarts', () => {
     });
   });
 
-  describe('10 - Posicione os campos de `Nome` e `Sobrenome` para que fiquem em linha', () => {
+  describe.only('10 - Posicione os campos de `Nome` e `Sobrenome` para que fiquem em linha', () => {
     it('O campo de "Sobrenome" está a direita do campo de "Nome"', () => {
       cy.get(USER_LASTNAME_INPUT_SELECTOR).should('be.rightOf', USER_NAME_INPUT_SELECTOR);
     });
