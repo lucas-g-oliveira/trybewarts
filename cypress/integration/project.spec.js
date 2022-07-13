@@ -115,7 +115,7 @@ describe('Trybewarts', () => {
     });
   });
 
-  describe.only('5 - Adicione um formulário no corpo da página', () => {
+  describe('5 - Adicione um formulário no corpo da página', () => {
     it('Existe um formulário com o id `evaluation-form`', () => {
       cy.get(EVALUATION_FORM).should('exist');
     });
@@ -137,7 +137,7 @@ describe('Trybewarts', () => {
     });
   });
 
-  describe('6 - Faça com que o eixo principal do formulário seja vertical', () => {
+  describe.only('6 - Faça com que o eixo principal do formulário seja vertical', () => {
     it('O eixo principal do formulário com id "evaluation-form" é vertical', () => {
       cy.get(EVALUATION_FORM).should('have.css', 'flex-direction', 'column');
     });
