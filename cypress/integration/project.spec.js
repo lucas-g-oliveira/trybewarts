@@ -309,7 +309,7 @@ describe('Trybewarts', () => {
     });
   });
 
-  describe('18 - Faça com que o botão `Enviar` seja habilitado somente após a checkbox do requisito 16 ser selecionada', () => {
+  describe.only('18 - Faça com que o botão `Enviar` seja habilitado somente após a checkbox do requisito 16 ser selecionada', () => {
     it('O botão deve inicialmente estar desabilitado', () => {
       cy.get('button#submit-btn')
         .should('be.disabled');
