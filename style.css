@@ -5,3 +5,12 @@
 .trybewarts-login{
     display: flex;
 }
+
+#evaluation-form{
+    display: flex;
+    width: 675px;
+}
+
+#id_main_form{
+    display: flex;
+}

@@ -100,7 +100,7 @@ describe('Trybewarts', () => {
     });
   });
 
-  describe.only('4 - Crie um título com o texto `Trybewarts` centralizado dentro do `Header`', () => {
+  describe('4 - Crie um título com o texto `Trybewarts` centralizado dentro do `Header`', () => {
     it('Existe um elemento h1 com o id "trybewarts-header-title" e texto "Trybewarts', () => {
       cy.get(TRYBEWARTS_HEADER_TITLE).should('exist')
         .and('have.text', 'Trybewarts');
@@ -115,7 +115,7 @@ describe('Trybewarts', () => {
     });
   });
 
-  describe('5 - Adicione um formulário no corpo da página', () => {
+  describe.only('5 - Adicione um formulário no corpo da página', () => {
     it('Existe um formulário com o id `evaluation-form`', () => {
       cy.get(EVALUATION_FORM).should('exist');
     });
