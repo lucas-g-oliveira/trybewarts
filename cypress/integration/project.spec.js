@@ -137,13 +137,13 @@ describe('Trybewarts', () => {
     });
   });
 
-  describe.only('6 - Faça com que o eixo principal do formulário seja vertical', () => {
+  describe('6 - Faça com que o eixo principal do formulário seja vertical', () => {
     it('O eixo principal do formulário com id "evaluation-form" é vertical', () => {
       cy.get(EVALUATION_FORM).should('have.css', 'flex-direction', 'column');
     });
   });
 
-  describe('7 - Adicione a logo da Trybewarts no lado direito da página', () => {
+  describe.only('7 - Adicione a logo da Trybewarts no lado direito da página', () => {
     it('Possui o id trybewarts-forms-logo', () => {
       cy.get(TRYBEWARTS_LOGO_FORMS_SELECTOR).should('exist');
     });
