@@ -165,7 +165,7 @@ describe('Trybewarts', () => {
     });
   });
 
-  describe.only('8 - Acrescente ao formulário com id `evaluation-form` os inputs de `nome, sobrenome e email`', () => {
+  describe('8 - Acrescente ao formulário com id `evaluation-form` os inputs de `nome, sobrenome e email`', () => {
     const INPUTS = [
       { placeholder: 'Nome', id: 'input-name' },
       { placeholder: 'Sobrenome', id: 'input-lastname' },
@@ -180,7 +180,7 @@ describe('Trybewarts', () => {
     });
   });
 
-  describe('9 - Acrescente ao formulário um select com o id `house` contendo as opções `Gitnória`, `Reactpuff`, `Corvinode` e `Pytherina`', () => {
+  describe.only('9 - Acrescente ao formulário um select com o id `house` contendo as opções `Gitnória`, `Reactpuff`, `Corvinode` e `Pytherina`', () => {
     beforeEach(() => cy.get(EVALUATION_FORM).as('houses'));
 
     const HOUSES = [
