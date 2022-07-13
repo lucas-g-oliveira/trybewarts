@@ -143,7 +143,7 @@ describe('Trybewarts', () => {
     });
   });
 
-  describe.only('7 - Adicione a logo da Trybewarts no lado direito da página', () => {
+  describe('7 - Adicione a logo da Trybewarts no lado direito da página', () => {
     it('Possui o id trybewarts-forms-logo', () => {
       cy.get(TRYBEWARTS_LOGO_FORMS_SELECTOR).should('exist');
     });
@@ -165,7 +165,7 @@ describe('Trybewarts', () => {
     });
   });
 
-  describe('8 - Acrescente ao formulário com id `evaluation-form` os inputs de `nome, sobrenome e email`', () => {
+  describe.only('8 - Acrescente ao formulário com id `evaluation-form` os inputs de `nome, sobrenome e email`', () => {
     const INPUTS = [
       { placeholder: 'Nome', id: 'input-name' },
       { placeholder: 'Sobrenome', id: 'input-lastname' },
