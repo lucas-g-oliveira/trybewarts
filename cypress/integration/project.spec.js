@@ -241,7 +241,7 @@ describe('Trybewarts', () => {
     });
   });
 
-  describe.only('13 - Crie campos de entrada do tipo `checkbox` contendo seis opções', () => {
+  describe('13 - Crie campos de entrada do tipo `checkbox` contendo seis opções', () => {
     it('Existe um elemento com o id "label-content" e o texto "Qual conteúdo você está com mais vontade de aprender?"', () => {
       cy.get('#label-content').contains(LABEL_CONTENT_TEXT);
     });
@@ -263,7 +263,7 @@ describe('Trybewarts', () => {
     });
   });
 
-  describe('14 - Crie campo de entrada para avaliar de 1 a 10 o nível de satisfação com a Trybewarts', () => {
+  describe.only('14 - Crie campo de entrada para avaliar de 1 a 10 o nível de satisfação com a Trybewarts', () => {
     it('Um elemento com o id label-rate e o texto "Como você avalia a Trybewarts?" deverá ser criado', () => {
       cy.get('#label-rate').contains(LABEL_RATE_TEXT);
     });

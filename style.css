@@ -1,34 +1,40 @@
-.header{
+.header {
     display: flex;
     background-color: rgb(50, 167, 145);
 }
-.trybewarts-login{
+
+.trybewarts-login {
     display: flex;
 }
 
-#evaluation-form{
+#evaluation-form {
     display: flex;
     width: 675px;
     flex-direction: column;
 }
 
-#id_main_form{
+#id_main_form {
     display: flex;
 }
 
-#trybewarts-forms-logo{
+#trybewarts-forms-logo {
     height: 500px;
 }
 
-#user-name{
+#user-name {
     display: flex;
 }
 
-#email-casa{
+#email-casa {
     display: flex;
 }
 
-#label-family{
+#label-family {
     display: flex;
     flex-direction: column;
+}
+
+#rate {
+    display: flex;
+    flex-direction: row;
 }
