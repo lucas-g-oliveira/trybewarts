@@ -3,6 +3,8 @@ const email = document.querySelector('#emailInput');
 const password = document.querySelector('#passwordInput');
 const btnSubmit = document.querySelector('#submit-btn');
 const checkBox = document.querySelector('#agreement');
+const countChar = document.querySelector('#counter');
+const textArea = document.getElementById('textarea');
 
 checkBox.addEventListener('click', () => {
   if (checkBox.checked) {
@@ -19,3 +21,12 @@ btn.addEventListener('click', () => {
     alert('Email ou senha inválidos.');
   }
 });
+
+
+function contadorChar(){
+  textArea.value;
+  countChar.innerText = 500-textArea.value.length;
+}
+
+
+

@@ -73,15 +73,19 @@
                 <input type="radio" name="rate" value="10">
             </div>
 
-           <label class="textarea" for="">Deixe seu comentário:</label>
-           <textarea maxlength="500" name="" id="" cols="30" rows="10"></textarea>
+            <label for="">Deixe seu comentário:</label>
+            <textarea id="textarea" class="textarea" maxlength="500" name="" id="textarea" cols="30" rows="10"
+                onkeyup="contadorChar()"></textarea>
 
 
-           <label id="label-infos" for="">Você concorda com o uso das informações acima?
-            <input id="agreement"type="checkbox">
-           </label>
+            <h6 id="counter">500</h6>
 
-           <button id="submit-btn" type="submit" disabled>Enviar</button>
+
+            <label id="label-infos" for="">Você concorda com o uso das informações acima?
+                <input id="agreement" type="checkbox">
+            </label>
+
+            <button id="submit-btn" type="submit" disabled>Enviar</button>
 
 
         </form>
@@ -91,4 +95,5 @@
     <footer>Direitos reservados à Trybewarts©</footer>
     <script src="script.js"></script>
 </body>
+
 </html>
