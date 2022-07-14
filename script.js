@@ -5,7 +5,11 @@ const btnSubmit = document.querySelector('#submit-btn');
 const checkBox = document.querySelector('#agreement');
 
 checkBox.addEventListener('click', () => {
-  checkBox.checked ? btnSubmit.disabled = false : btnSubmit.disabled = true;
+  if (checkBox.checked) {
+    btnSubmit.disabled = false;
+  } else {
+    btnSubmit.disabled = true;
+  }
 });
 
 btn.addEventListener('click', () => {
