@@ -22,11 +22,6 @@ btn.addEventListener('click', () => {
   }
 });
 
-
-function contadorChar(){
-  textArea.value;
-  countChar.innerText = 500-textArea.value.length;
-}
-
-
-
+textArea.addEventListener('keyup', () => {
+  countChar.innerText = 500 - textArea.value.length;
+});
