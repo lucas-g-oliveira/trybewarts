@@ -45,7 +45,7 @@ btn.addEventListener('click', () => {
   }
 });
 
-function getRadioSelected(array) {
+function getRadioSelected(arraynode) {
   for (let index = 0; index < array.length; index += 1) {
     if (array[index].checked === true) {
       return array[index].value;
